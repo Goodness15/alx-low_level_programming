@@ -9,17 +9,16 @@
  */
 int main(void)
 {
-    char ch;
+	char ch;
 
-    for (ch = 'a'; ch <= 'z'; ch++)
-    {
-        if (ch != 'q' && ch != 'e')
-        {
-            putchar(ch);
-        }
-    }
-
-    putchar('\n');
-
-    return (0);
+	/* Blank line after the declaration */
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		if (ch != 'q' && ch != 'e')
+	{
+		putchar (ch);
+	}
+	}
+	putchar ('\n');
+	return (0);
 }
