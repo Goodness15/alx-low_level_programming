@@ -1,5 +1,5 @@
 #include "maint.h"
-
+#include <limits.h>
 /**
  * _atoi - Converts a string to an integer.
  * @s: The source string.
@@ -25,6 +25,14 @@ int _atoi(char *s)
 			if (!started_reading_digits)
 				started_reading_digits = 1;
 			/* Convert digit and update result */
+			if (result > (INT_MAX - (*s - '0')) / 10)
+			{
+				if (sign == 1)
+					return (INT_MAX);
+				else
+					return (INT_MIN);
+				}
+
 			result = result * 10 + (*s - '0');
 		}
 		else if (started_reading_digits)
