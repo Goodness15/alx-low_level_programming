@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char *str;
+	char *str = "Lorem ipsum...";
 
 	/* Blank line after declarations for readability */
 
