@@ -1,6 +1,8 @@
 #ifndef MAINA_H
 #define MAINA_H
 
+#include <stdio.h>
+
 /**
  * _putchar - Writes a character to standard output.
  * @c: Character to be printed.

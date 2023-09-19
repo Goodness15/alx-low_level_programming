@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "maina.h"
 
 void puts2(char *);
 
@@ -9,7 +10,7 @@ void puts2(char *);
 int main(void)
 {
 	char *str1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,";
-	char *str2 = "sed do eiusmod tempor incididunt ut labore et dolore magna"
+	char *str2 = "sed do eiusmod tempor incididunt ut labore et dolore magna";
 	char *str3 = "aliqua. Ut enim ad minim veniam, quis nostrud exercitation";
 	char *str4 = "ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 	char *str5 = "Duis aute irure dolor in reprehenderit in voluptate velit";
