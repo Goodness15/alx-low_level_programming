@@ -11,10 +11,10 @@ int is_separator(char c)
 char separators[] = " \t\n,;.!?\"(){}";
 int i;
 
-for (i = 0; separators[i]; i++) {
-if (c == separators[i]) {
+for (i = 0; separators[i]; i++)
+{
+if (c == separators[i])
 return (1);
-}
 }
 
 return (0);
@@ -31,16 +31,14 @@ char *cap_string(char *str)
 int i = 0;
 
 /* capitalize the first character of the string if it's a letter */
-if (str[i] >= 'a' && str[i] <= 'z') {
+if (str[i] >= 'a' && str[i] <= 'z')
 str[i] -= 'a' - 'A';
-}
 
-while (str[i]) {
-/* if the current character is a separator and the next is a lowercase letter */
-if (is_separator(str[i]) && str[i + 1] >= 'a' && str[i + 1] <= 'z') {
-str[i + 1] -= 'a' - 'A';
-}
-i++;
+for (i = 1; str[i]; i++)
+{
+if (str[i] >= 'a' && str[i] <= 'z' && is_separator(str[i - 1]))
+str[i] -= 'a' - 'A';
+
 }
 
 return (str);
