@@ -1,0 +1,49 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* print_buffer - prints a buffer
+* @b: the buffer to be printed
+* @size: number of bytes from buffer to be printed
+* Return: Nothing.
+*/
+void print_buffer(char *b, int size)
+{
+int i, j;
+
+if (size <= 0)
+{
+putchar('\n');
+return;
+}
+
+for (i = 0; i < size; i += 10)
+{
+printf("%08x: ", i);	/* print address */
+
+/* print hex values */
+for (j = 0; j < 10; j++)
+{
+if (j % 2 == 0 && j != 0)
+putchar(' ');
+
+if (i + j < size)
+printf("%02x", *(b + i + j));
+else
+printf("  ");
+}
+
+putchar(' ');
+
+/* print chars from buffer */
+for (j = 0; j < 10 && i + j < size; j++)
+{
+if (*(b + i + j) >= 32 && *(b + i + j) <= 126)	/* printable chars */
+putchar(*(b + i + j));
+else
+putchar('.');
+}
+
+putchar('\n');
+}
+}
