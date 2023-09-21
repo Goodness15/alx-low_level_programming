@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stddef.h>
+#include <unistd.h>
 
 /* Function prototypes */
 char *_strcat(char *dest, char *src);
@@ -14,6 +15,8 @@ char *cap_string(char *str);
 char *leet(char *s);
 void reverse_array(int *a, int n);
 char *rot13(char *);
+void _putchar(char c);
+void print_number(int n);
 
 #endif /* MAIN_H */
 
