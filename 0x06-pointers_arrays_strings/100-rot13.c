@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+* rot13 - Encodes a string using rot13.
+* @s: The string to be modified.
+*
+* Return: A pointer to the modified string.
+*/
+char *rot13(char *s)
+{
+int i, j;
+char original[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char rotated[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (i = 0; s[i]; i++)
+{
+for (j = 0; original[j]; j++)
+{
+if (s[i] == original[j])
+{
+s[i] = rotated[j];
+break;
+}
+}
+}
+
+return (s);
+}
