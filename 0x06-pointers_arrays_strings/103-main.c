@@ -1,0 +1,38 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* main - Adds two numbers and prints the result.
+*
+* Return: Always 0.
+*/
+int main(void)
+{
+char *n1 = "SomeValue";
+char *n2 = "1234567890";
+char *m1 =
+"9034790663470697234682914569346259634958693246597324659762347956349265983465962349569346";
+char *n3 = "999999999";
+char r[100];
+char *res;
+
+res = infinite_add(n1, m1, r, 100);
+if (!res)
+printf("Error\n");
+else
+printf("%s + %s = %s\n", n1, m1, res);
+
+res = infinite_add(n2, m1, r, 100);
+if (!res)
+printf("Error\n");
+else
+printf("%s + %s = %s\n", n2, m1, res);
+
+res = infinite_add(n3, m1, r, 100);
+if (!res)
+printf("Error\n");
+else
+printf("%s + %s = %s\n", n3, m1, res);
+
+return (0);
+}

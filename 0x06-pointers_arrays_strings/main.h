@@ -16,11 +16,12 @@ char *cap_string(char *str);
 char *leet(char *s);
 void reverse_array(int *a, int n);
 char *rot13(char *);
-void _putchar(char c);
 void print_number(int n);
 int main(void);
 void print_number(int n);
 int _putchar(char c);
-
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+char *leet(char *str);
+char *rot13(char *str);
 #endif /* MAIN_H */
 
