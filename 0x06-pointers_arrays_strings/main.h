@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <unistd.h>
+#include <stdio.h>
 
 /* Function prototypes */
 char *_strcat(char *dest, char *src);
@@ -17,6 +18,9 @@ void reverse_array(int *a, int n);
 char *rot13(char *);
 void _putchar(char c);
 void print_number(int n);
+int main(void);
+void print_number(int n);
+int _putchar(char c);
 
 #endif /* MAIN_H */
 
