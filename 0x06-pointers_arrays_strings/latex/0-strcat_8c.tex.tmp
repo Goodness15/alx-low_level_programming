@@ -1,0 +1,19 @@
+\hypertarget{0-strcat_8c}{}\doxysection{0-\/strcat.\+c File Reference}
+\label{0-strcat_8c}\index{0-\/strcat.c@{0-\/strcat.c}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for 0-\/strcat.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{0-strcat_8c_a201f80b4a1a47920454f9decc935cf35}{\+\_\+strcat}} (char $\ast$dest, char $\ast$src)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{0-strcat_8c_a201f80b4a1a47920454f9decc935cf35}\label{0-strcat_8c_a201f80b4a1a47920454f9decc935cf35}} 
+\index{0-\/strcat.c@{0-\/strcat.c}!\_strcat@{\_strcat}}
+\index{\_strcat@{\_strcat}!0-\/strcat.c@{0-\/strcat.c}}
+\doxysubsubsection{\texorpdfstring{\_strcat()}{\_strcat()}}
+{\footnotesize\ttfamily char$\ast$ \+\_\+strcat (\begin{DoxyParamCaption}\item[{char $\ast$}]{dest,  }\item[{char $\ast$}]{src }\end{DoxyParamCaption})}
+
