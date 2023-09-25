@@ -1,0 +1,40 @@
+#include "main.h"
+
+/**
+* _strspn - Gets the length of a prefix substring.
+* @s: The string to be scanned.
+* @accept: The string containing the characters to match.
+*
+* Return: The number of bytes in the initial segment
+*         of s which consist only of bytes from accept.
+*/
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int count;
+char *start_accept;
+
+start_accept = accept;
+count = 0;
+
+while (*s)
+{
+accept = start_accept;	/* Reset accept for every new char of s */
+
+while (*accept)
+{
+if (*s == *accept)
+{	/* If the character matches */
+count++;
+break;
+}
+accept++;
+}
+
+/* If we went through all of 'accept' without finding a match */
+if (!*accept)
+return (count);
+
+s++;
+}
+return (count);
+}
