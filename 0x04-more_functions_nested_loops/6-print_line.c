@@ -1,26 +1,21 @@
-#include <stdio.h>
-#include <unistd.h>		/* for the write function */
+#include "main.h"
 
-/*
- * Function to print a line of underscores.
- * Param: n - number of underscores to print.
- */
-void print_line(int n);
-
-/*
-* Implementation of print_line function.
-* Prints underscores based on the provided count.
+/**
+* print_line - Draws a straight line in the terminal.
+* @n: The number of times the character _ should be printed.
 */
 void print_line(int n)
 {
-int i; /* Declare i outsidetheloopfor compatibility with older C standards */
+int i;
 
 if (n <= 0)
-_putchar('\n');
-else
 {
+_putchar('\n');
+return;
+}
+
 for (i = 0; i < n; i++)
 _putchar('_');
+
 _putchar('\n');
-}
 }
